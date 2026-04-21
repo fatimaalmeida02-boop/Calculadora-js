@@ -4,60 +4,62 @@ body {
     align-items: center;
     height: 100vh;
     background: #1e1e1e;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
+/* Caixa */
 .calculadora {
     background: #cfcfcf;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
     width: 260px;
 }
 
+/* Visor */
 .visor {
     background: #aee1f9;
-    color: #000;
-    font-size: 32px;
+    font-size: 30px;
+    text-align: right;
     padding: 10px;
     border-radius: 8px;
-    text-align: right;
     margin-bottom: 15px;
-    height: 50px;
 }
 
+/* GRID */
 .botoes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
+/* Botões */
 button {
     padding: 15px;
-    font-size: 18px;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     color: white;
-    font-weight: bold;
-}
-
-.num {
+    font-size: 18px;
+    cursor: pointer;
     background: black;
 }
 
-.operador {
-    background: black;
-}
-
-.igual {
-    background: #2196f3;
-}
-
+/* cores especiais */
 .mais {
-    background: #4caf50;
+    background: green;
 }
 
 .menos {
-    background: #f44336;
+    background: red;
+}
+
+.igual {
+    background: blue;
+    grid-column: span 4;
+}
+
+/* título */
+.titulo {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
 }
