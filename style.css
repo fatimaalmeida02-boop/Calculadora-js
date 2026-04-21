@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e1e;
+    font-family: Arial, sans-serif;
+}
+
+.calculadora {
+    background: #cfcfcf;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 260px;
+}
+
+.visor {
+    background: #aee1f9;
+    color: #000;
+    font-size: 32px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: right;
+    margin-bottom: 15px;
+    height: 50px;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.num {
+    background: black;
+}
+
+.operador {
+    background: black;
+}
+
+.igual {
+    background: #2196f3;
+}
+
+.mais {
+    background: #4caf50;
+}
+
+.menos {
+    background: #f44336;
+}
